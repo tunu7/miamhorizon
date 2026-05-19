@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Navbar from "../components/Navbar"
 
 function Booking() {
 
@@ -44,6 +45,9 @@ function Booking() {
   }
 
   return (
+
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-[#050816] text-white flex justify-center items-center px-6 py-20">
 
       <form
@@ -123,6 +127,7 @@ function Booking() {
       </form>
 
     </div>
+     </>
   )
 }
 
