@@ -1,0 +1,18 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #050816;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.glow{
+  box-shadow: 0px 0px 25px rgba(34,211,238,0.4);
+}
