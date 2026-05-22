@@ -1,23 +1,39 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function About() {
   return (
-    <>
+    <div className="bg-black text-white">
+
       <Navbar />
 
-      <div className="px-8 py-20 max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto px-6 py-32">
 
-        <h1 className="text-5xl font-bold mb-8">
-          About MIAM Horizons
+        <p className="text-green-400 uppercase tracking-widest">
+          About Us
+        </p>
+
+        <h1 className="text-5xl font-black mt-4">
+          Building Modern Outdoor Advertising
         </h1>
 
-        <p className="text-gray-300 text-lg leading-8">
-          MIAM Horizons is Arunachal Pradesh’s first premium outdoor LED advertising platform offering both 2D and 3D anamorphic advertising experiences.
+        <p className="text-gray-400 text-lg mt-8 leading-relaxed">
+          Miam Horizon is focused on bringing modern digital outdoor advertising
+          experiences to Arunachal Pradesh through premium high-visibility LED
+          billboard solutions.
+        </p>
+
+        <p className="text-gray-400 text-lg mt-6 leading-relaxed">
+          We help brands, businesses, events, and campaigns capture public
+          attention through strategic roadside digital advertising.
         </p>
 
       </div>
-    </>
-  )
+
+      <Footer />
+
+    </div>
+  );
 }
 
-export default About
+export default About;

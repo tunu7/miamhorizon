@@ -1,102 +1,119 @@
-import { Link } from "react-router-dom"
-import { useState } from "react"
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const [menuOpen, setMenuOpen] = useState(false)
+  const navLinks = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "Billboard",
+      path: "/billboard",
+    },
+    {
+      name: "Media",
+      path: "/media",
+    },
+    {
+      name: "Pricing",
+      path: "/pricing",
+    },
+    {
+      name: "About",
+      path: "/about",
+    },
+    {
+      name: "Contact",
+      path: "/contact",
+    },
+  ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-cyan-500/20">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur border-b border-white/10">
 
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-        {/* LOGO */}
-        <h1 className="text-2xl font-bold text-cyan-400">
-          MIAM Horizons
-        </h1>
+        {/* Logo */}
+        <Link
+          to="/"
+          className="text-2xl font-black text-white"
+        >
+          Miam Horizon
+        </Link>
 
-        {/* DESKTOP MENU */}
-        <div className="hidden md:flex gap-8 text-white font-medium">
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex items-center gap-8 text-white">
 
-          <Link
-            to="/"
-            className="hover:text-cyan-400 transition duration-300"
-          >
-            Home
-          </Link>
-
-          <Link
-            to="/about"
-            className="hover:text-cyan-400 transition duration-300"
-          >
-            About
-          </Link>
-
-          <Link
-            to="/gallery"
-            className="hover:text-cyan-400 transition duration-300"
-          >
-            Gallery
-          </Link>
-
+          {navLinks.map((link, index) => (
+            <Link
+              key={index}
+              to={link.path}
+              className="hover:text-green-400 transition"
+            >
+              {link.name}
+            </Link>
+          ))}
 
         </div>
 
-        {/* BUTTON */}
-        <button className="hidden md:block bg-cyan-400 text-black px-5 py-2 rounded-lg font-semibold hover:bg-cyan-300 transition">
-          Book Slot
-        </button>
-
-        {/* MOBILE MENU BUTTON */}
-        <button
-          className="md:hidden text-cyan-400"
-          onClick={() => setMenuOpen(!menuOpen)}
+        {/* Desktop CTA */}
+        <Link
+          to="/contact"
+          className="hidden lg:flex bg-green-400 text-black px-5 py-2 rounded-full font-bold hover:scale-105 transition"
         >
-          <span className="text-2xl leading-none">{menuOpen ? "X" : "|||"}</span>
+          Book Now
+        </Link>
+
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="lg:hidden text-white"
+        >
+          {menuOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
 
       </div>
 
-      {/* MOBILE MENU */}
-      {
-        menuOpen && (
-          <div className="md:hidden bg-[#0b1120] border-t border-cyan-500/20 px-6 py-6 flex flex-col gap-6 text-white">
+      {/* Mobile Menu */}
+      <div
+        className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          menuOpen
+            ? "max-h-screen border-t border-white/10"
+            : "max-h-0"
+        }`}
+      >
 
+        <div className="px-6 py-6 flex flex-col gap-6 bg-black text-white">
+
+          {navLinks.map((link, index) => (
             <Link
-              to="/"
+              key={index}
+              to={link.path}
               onClick={() => setMenuOpen(false)}
-              className="hover:text-cyan-400 transition"
+              className="text-lg hover:text-green-400 transition"
             >
-              Home
+              {link.name}
             </Link>
+          ))}
 
-            <Link
-              to="/about"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-cyan-400 transition"
-            >
-              About
-            </Link>
+          <Link
+            to="/contact"
+            onClick={() => setMenuOpen(false)}
+            className="bg-green-400 text-black py-3 rounded-full text-center font-bold"
+          >
+            Book Now
+          </Link>
 
-            <Link
-              to="/gallery"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-cyan-400 transition"
-            >
-              Gallery
-            </Link>
+        </div>
 
-
-            <button className="bg-cyan-400 text-black px-5 py-3 rounded-lg font-semibold hover:bg-cyan-300 transition">
-              Book Slot
-            </button>
-
-          </div>
-        )
-      }
+      </div>
 
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
