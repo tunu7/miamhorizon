@@ -196,7 +196,7 @@ function Contact() {
                   </p>
 
                   <h3 className="text-xl font-bold">
-                    +91 XXXXX XXXXX
+                    +91 96126 12290
                   </h3>
 
                 </div>
@@ -218,7 +218,7 @@ function Contact() {
                   </p>
 
                   <h3 className="text-xl font-bold">
-                    hello@miamhorizon.com
+                    miampvt@gmail.com
                   </h3>
 
                 </div>
