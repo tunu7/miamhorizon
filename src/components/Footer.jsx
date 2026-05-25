@@ -179,7 +179,7 @@ function Footer() {
                   </p>
 
                   <p className="text-white font-medium mt-1">
-                    +91 XXXXX XXXXX
+                    +91 96126 12290
                   </p>
 
                 </div>
@@ -202,7 +202,7 @@ function Footer() {
                   </p>
 
                   <p className="text-white font-medium mt-1">
-                    hello@miamhorizon.com
+                    miampvt@gmail.com
                   </p>
 
                 </div>
