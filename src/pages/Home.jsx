@@ -1,5 +1,3 @@
-// Home.jsx
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
@@ -16,6 +14,7 @@ import {
 } from "lucide-react";
 
 function Home() {
+
   const galleryImages = [
     "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
 
@@ -71,14 +70,14 @@ function Home() {
                 className="text-green-400"
               />
 
-              <p className="text-sm uppercase tracking-[0.2em] text-green-400">
+              <p className="text-green-400 uppercase tracking-[0.35em] text-sm font-semibold">
                 Premium Outdoor Advertising
               </p>
 
             </div>
 
             {/* TITLE */}
-            <h1 className="text-5xl md:text-6xl lg:text-8xl font-black leading-[0.95] tracking-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-[7rem] font-extrabold leading-[0.9] tracking-[-0.04em]">
 
               Digital
               <span className="block text-green-400">
@@ -93,7 +92,7 @@ function Home() {
             </h1>
 
             {/* DESC */}
-            <p className="text-gray-400 text-lg leading-relaxed mt-8 max-w-2xl">
+            <p className="text-zinc-400 text-xl leading-[1.9] mt-8 max-w-2xl font-light tracking-wide">
 
               Premium LED outdoor advertising solutions in Arunachal Pradesh
               delivering high-visibility 2D and immersive 3D anamorphic
@@ -105,9 +104,10 @@ function Home() {
             {/* CTA */}
             <div className="flex flex-wrap gap-5 mt-10">
 
-              <Link 
-                  to = "/contact" 
-                  className="group bg-green-400 text-black px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:scale-105 transition duration-300">
+              <Link
+                to="/contact"
+                className="group bg-green-400 text-black px-8 py-4 rounded-full font-semibold tracking-wide flex items-center gap-3 hover:scale-105 transition duration-300"
+              >
 
                 Book Advertising
 
@@ -118,7 +118,10 @@ function Home() {
 
               </Link>
 
-              <Link to="/media" className="border border-white/10 bg-zinc-900/80 backdrop-blur px-8 py-4 rounded-full flex items-center gap-3 hover:border-green-400/30 transition">
+              <Link
+                to="/media"
+                className="border border-white/10 bg-zinc-900/80 backdrop-blur px-8 py-4 rounded-full flex items-center gap-3 hover:border-green-400/30 transition font-medium tracking-wide"
+              >
 
                 <Play size={18} />
 
@@ -151,11 +154,11 @@ function Home() {
               ].map((item, index) => (
                 <div key={index}>
 
-                  <h3 className="text-3xl lg:text-4xl font-black text-green-400">
+                  <h3 className="text-4xl lg:text-5xl font-extrabold text-green-400 tracking-tight">
                     {item.value}
                   </h3>
 
-                  <p className="text-gray-500 text-sm mt-2">
+                  <p className="text-zinc-500 text-sm mt-3 uppercase tracking-[0.18em]">
                     {item.label}
                   </p>
 
@@ -186,11 +189,11 @@ function Home() {
             {/* FLOATING CARD */}
             <div className="absolute top-10 -left-10 bg-zinc-900/90 backdrop-blur border border-white/10 rounded-3xl p-6 shadow-2xl">
 
-              <p className="text-gray-500 text-sm uppercase">
+              <p className="text-zinc-500 text-sm uppercase tracking-[0.18em]">
                 Location
               </p>
 
-              <h3 className="text-2xl font-black mt-2">
+              <h3 className="text-2xl font-bold mt-2 tracking-tight">
                 Itanagar, AP
               </h3>
 
@@ -199,11 +202,11 @@ function Home() {
             {/* FLOATING CARD */}
             <div className="absolute bottom-[-20px] right-[-20px] bg-zinc-900/90 backdrop-blur border border-white/10 rounded-3xl p-6 shadow-2xl">
 
-              <p className="text-gray-500 text-sm uppercase">
+              <p className="text-zinc-500 text-sm uppercase tracking-[0.18em]">
                 Display Type
               </p>
 
-              <h3 className="text-2xl font-black mt-2 text-green-400">
+              <h3 className="text-2xl font-bold mt-2 tracking-tight text-green-400">
                 2D + 3D LED
               </h3>
 
@@ -222,11 +225,11 @@ function Home() {
 
           <div className="text-center max-w-4xl mx-auto">
 
-            <p className="text-green-400 uppercase tracking-[0.3em]">
+            <p className="text-green-400 uppercase tracking-[0.35em] text-sm font-semibold">
               Why Advertise With Us
             </p>
 
-            <h2 className="text-4xl lg:text-6xl font-black mt-6 leading-tight">
+            <h2 className="text-4xl lg:text-6xl font-extrabold mt-6 leading-[1] tracking-[-0.03em]">
 
               Built For
               <span className="block text-green-400">
@@ -272,11 +275,11 @@ function Home() {
 
                 </div>
 
-                <h3 className="text-2xl font-bold">
+                <h3 className="text-2xl font-semibold tracking-tight">
                   {item.title}
                 </h3>
 
-                <p className="text-gray-400 mt-5 leading-relaxed">
+                <p className="text-zinc-400 mt-5 leading-8 font-light">
                   {item.desc}
                 </p>
 
@@ -296,11 +299,11 @@ function Home() {
 
           <div className="text-center">
 
-            <p className="text-green-400 uppercase tracking-[0.3em]">
+            <p className="text-green-400 uppercase tracking-[0.35em] text-sm font-semibold">
               Media Showcase
             </p>
 
-            <h2 className="text-4xl lg:text-6xl font-black mt-6">
+            <h2 className="text-4xl lg:text-6xl font-extrabold mt-6 leading-[1] tracking-[-0.03em]">
 
               Advertising
               <span className="block text-green-400">
@@ -344,11 +347,11 @@ function Home() {
 
           <div className="text-center">
 
-            <p className="text-green-400 uppercase tracking-[0.3em]">
+            <p className="text-green-400 uppercase tracking-[0.35em] text-sm font-semibold">
               Billboard Gallery
             </p>
 
-            <h2 className="text-4xl lg:text-6xl font-black mt-6">
+            <h2 className="text-4xl lg:text-6xl font-extrabold mt-6 leading-[1] tracking-[-0.03em]">
 
               Real-World
               <span className="block text-green-400">
@@ -392,11 +395,11 @@ function Home() {
           {/* LEFT */}
           <div>
 
-            <p className="text-green-400 uppercase tracking-[0.3em]">
+            <p className="text-green-400 uppercase tracking-[0.35em] text-sm font-semibold">
               Billboard Information
             </p>
 
-            <h2 className="text-4xl lg:text-6xl font-black mt-6 leading-tight">
+            <h2 className="text-4xl lg:text-6xl font-extrabold mt-6 leading-[1] tracking-[-0.03em]">
 
               Built For
               <span className="block text-green-400">
@@ -405,7 +408,7 @@ function Home() {
 
             </h2>
 
-            <p className="text-gray-400 text-lg mt-8 leading-relaxed">
+            <p className="text-zinc-400 text-xl leading-[1.9] mt-8 font-light tracking-wide">
 
               Designed for modern advertising campaigns with premium roadside
               visibility, immersive digital experiences, and continuous
@@ -441,11 +444,11 @@ function Home() {
                 className="bg-black border border-white/10 rounded-[2rem] p-8"
               >
 
-                <h3 className="text-4xl font-black text-green-400">
+                <h3 className="text-4xl font-extrabold text-green-400 tracking-tight">
                   {item.value}
                 </h3>
 
-                <p className="text-gray-500 mt-3">
+                <p className="text-zinc-500 mt-3 uppercase tracking-[0.18em] text-sm">
                   {item.label}
                 </p>
 
