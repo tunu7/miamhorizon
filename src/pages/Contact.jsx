@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 
 import { useState } from "react";
-import axios from "axios";
 
 function Contact() {
 
@@ -81,43 +80,51 @@ function Contact() {
 
   const handleSubmit = async (e) => {
 
-    e.preventDefault();
+  e.preventDefault();
 
-    try {
+  try {
 
-      setLoading(true);
+    setLoading(true);
 
-      await axios.post(
-        "YOUR_GOOGLE_SCRIPT_WEBAPP_URL",
-        formData
-      );
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbzw8xR8YbKfEgE3-IFZWU3qQNVawwv4OV8SCNrR8xtcVze1yXN-G0qRLRKjmgKjZ2-S/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    );
 
-      setSuccess(true);
+    setSuccess(true);
 
-      setFormData({
-        name: "",
-        company: "",
-        email: "",
-        phone: "",
-        campaignType: "",
-        adType: "",
-        budget: "",
-        duration: "",
-        message: "",
-      });
+    setFormData({
+      name: "",
+      company: "",
+      email: "",
+      phone: "",
+      campaignType: "",
+      adType: "",
+      budget: "",
+      duration: "",
+      message: "",
+    });
 
-    } catch (error) {
+  } catch (error) {
 
-      console.log(error);
-      alert("Something went wrong");
+    console.log(error);
 
-    } finally {
+    alert("Something went wrong");
 
-      setLoading(false);
+  } finally {
 
-    }
+    setLoading(false);
 
-  };
+  }
+
+};
 
   return (
     <div className="bg-black text-white overflow-hidden min-h-screen">
