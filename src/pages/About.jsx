@@ -11,6 +11,39 @@ import {
   Building2,
   ArrowRight,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+
+
+<Helmet>
+  <title>
+    About MIAM Horizons | Outdoor Advertising Agency
+  </title>
+
+  <meta
+    name="description"
+    content="Learn about MIAM Horizons, a premium outdoor advertising and digital billboard company delivering innovative LED advertising campaigns in Arunachal Pradesh and Northeast India."
+  />
+
+  <meta
+    name="keywords"
+    content="about MIAM Horizons, advertising company Arunachal Pradesh, outdoor media agency, LED advertising company"
+  />
+
+  <meta
+    property="og:title"
+    content="About MIAM Horizons"
+  />
+
+  <meta
+    property="og:description"
+    content="Premium digital billboard and outdoor advertising solutions."
+  />
+
+  <link
+    rel="canonical"
+    href="https://yourdomain.com/about"
+  />
+</Helmet>
 
 function About() {
 

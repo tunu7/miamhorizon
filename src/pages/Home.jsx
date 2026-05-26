@@ -12,6 +12,56 @@ import {
   Building2,
   Zap,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+
+<Helmet>
+  <title>
+    MIAM Horizons | Premium Digital Billboard Advertising
+  </title>
+
+  <meta
+    name="description"
+    content="Premium LED billboard advertising solutions in Arunachal Pradesh delivering high-visibility outdoor advertising campaigns for businesses, brands, events, and government projects."
+  />
+
+  <meta
+    name="keywords"
+    content="LED billboard Arunachal Pradesh, outdoor advertising, digital billboard, 3D billboard advertising"
+  />
+
+  <link
+    rel="canonical"
+    href="https://yourdomain.com/"
+  />
+
+  <meta
+    property="og:title"
+    content="MIAM Horizons"
+  />
+
+  <meta
+    property="og:description"
+    content="Premium outdoor LED advertising solutions in Arunachal Pradesh."
+  />
+
+  <meta
+    property="og:image"
+    content="https://yourdomain.com/og-image.jpg"
+  />
+
+  <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "AdvertisingAgency",
+  "name": "MIAM Horizons",
+  "url": "https://yourdomain.com",
+  "logo": "https://yourdomain.com/miamhorizonlogo.jpeg",
+  "description": "Premium digital billboard advertising solutions in Arunachal Pradesh",
+  "areaServed": "Arunachal Pradesh"
+})}
+</script>
+</Helmet>
+
 
 function Home() {
 

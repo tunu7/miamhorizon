@@ -9,6 +9,39 @@ import {
   Eye,
   Video,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+
+
+<Helmet>
+  <title>
+    Billboard Campaign Gallery | MIAM Horizons
+  </title>
+
+  <meta
+    name="description"
+    content="View premium LED billboard campaigns, digital outdoor advertising projects, and creative media displays by MIAM Horizons."
+  />
+
+  <meta
+    name="keywords"
+    content="billboard gallery, advertising campaigns, outdoor media projects, LED display gallery"
+  />
+
+  <meta
+    property="og:title"
+    content="Campaign Gallery | MIAM Horizons"
+  />
+
+  <meta
+    property="og:description"
+    content="Explore our premium billboard advertising campaigns and digital displays."
+  />
+
+  <link
+    rel="canonical"
+    href="https://yourdomain.com/media"
+  />
+</Helmet>
 
 function Media() {
 

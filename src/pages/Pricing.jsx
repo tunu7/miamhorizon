@@ -1,6 +1,38 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+
+<Helmet>
+  <title>
+    Billboard Advertising Pricing | MIAM Horizons
+  </title>
+
+  <meta
+    name="description"
+    content="Get affordable and premium pricing for LED billboard advertising, outdoor campaigns, and digital media promotions in Arunachal Pradesh."
+  />
+
+  <meta
+    name="keywords"
+    content="billboard pricing, LED advertising cost, outdoor advertising pricing, digital billboard rates"
+  />
+
+  <meta
+    property="og:title"
+    content="Advertising Pricing | MIAM Horizons"
+  />
+
+  <meta
+    property="og:description"
+    content="Affordable premium outdoor billboard advertising solutions."
+  />
+
+  <link
+    rel="canonical"
+    href="https://yourdomain.com/pricing"
+  />
+</Helmet>
 
 function Pricing() {
   const standardRates = [
