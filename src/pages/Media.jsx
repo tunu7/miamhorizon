@@ -12,6 +12,28 @@ import {
 import { Helmet } from "react-helmet-async";
 
 
+
+function Media() {
+
+  const mediaImages = [
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
+
+    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+
+    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop",
+  ];
+
+  const videos = [
+    "https://player.vimeo.com/external/434045526.sd.mp4?s=2f4d9f5e89a7bb58f7e6b3f1e3cfdcb8b3df3a71&profile_id=139&oauth2_token_id=57447761",
+
+    "https://player.vimeo.com/external/371433846.sd.mp4?s=2366f9c179f1dc93b4bc1d651d81d77ec2a3f8b4&profile_id=139&oauth2_token_id=57447761",
+  ];
+
+  return (
+
+    <>
+    
+    
 <Helmet>
   <title>
     Billboard Campaign Gallery | MIAM Horizons
@@ -43,23 +65,7 @@ import { Helmet } from "react-helmet-async";
   />
 </Helmet>
 
-function Media() {
 
-  const mediaImages = [
-    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
-
-    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
-
-    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop",
-  ];
-
-  const videos = [
-    "https://player.vimeo.com/external/434045526.sd.mp4?s=2f4d9f5e89a7bb58f7e6b3f1e3cfdcb8b3df3a71&profile_id=139&oauth2_token_id=57447761",
-
-    "https://player.vimeo.com/external/371433846.sd.mp4?s=2366f9c179f1dc93b4bc1d651d81d77ec2a3f8b4&profile_id=139&oauth2_token_id=57447761",
-  ];
-
-  return (
     <div className="bg-black text-white overflow-hidden">
 
       <Navbar />
@@ -248,6 +254,8 @@ function Media() {
       <Footer />
 
     </div>
+
+    </>
   );
 }
 

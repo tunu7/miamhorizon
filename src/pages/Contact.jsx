@@ -17,36 +17,6 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 
 
-<Helmet>
-  <title>
-    Contact MIAM Horizons | Billboard Advertising Agency
-  </title>
-
-  <meta
-    name="description"
-    content="Contact MIAM Horizons for premium digital billboard advertising, LED display campaigns, outdoor promotions, and media advertising services in Arunachal Pradesh."
-  />
-
-  <meta
-    name="keywords"
-    content="contact MIAM Horizons, outdoor advertising contact, LED billboard company contact"
-  />
-
-  <meta
-    property="og:title"
-    content="Contact MIAM Horizons"
-  />
-
-  <meta
-    property="og:description"
-    content="Get in touch for premium billboard advertising solutions."
-  />
-
-  <link
-    rel="canonical"
-    href="https://yourdomain.com/contact"
-  />
-</Helmet>
 
 function Contact() {
 
@@ -161,6 +131,40 @@ function Contact() {
 };
 
   return (
+    <>
+    
+      
+<Helmet>
+  <title>
+    Contact MIAM Horizons | Billboard Advertising Agency
+  </title>
+
+  <meta
+    name="description"
+    content="Contact MIAM Horizons for premium digital billboard advertising, LED display campaigns, outdoor promotions, and media advertising services in Arunachal Pradesh."
+  />
+
+  <meta
+    name="keywords"
+    content="contact MIAM Horizons, outdoor advertising contact, LED billboard company contact"
+  />
+
+  <meta
+    property="og:title"
+    content="Contact MIAM Horizons"
+  />
+
+  <meta
+    property="og:description"
+    content="Get in touch for premium billboard advertising solutions."
+  />
+
+  <link
+    rel="canonical"
+    href="https://miamhorizon.com/contact"
+  />
+</Helmet>
+
     <div className="bg-black text-white overflow-hidden min-h-screen">
 
       <Navbar />
@@ -557,6 +561,8 @@ function Contact() {
       <Footer />
 
     </div>
+
+    </>
   );
 }
 

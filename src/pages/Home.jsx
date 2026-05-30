@@ -52,7 +52,7 @@ function Home() {
 
   <link
     rel="canonical"
-    href="https://yourdomain.com/"
+    href="https://miamhorizon.com/"
   />
 
   <meta
@@ -67,7 +67,7 @@ function Home() {
 
   <meta
     property="og:image"
-    content="https://yourdomain.com/og-image.jpg"
+    content="https://miamhorizon.com/og-image.jpg"
   />
 
   <script type="application/ld+json">
@@ -75,8 +75,8 @@ function Home() {
   "@context": "https://schema.org",
   "@type": "AdvertisingAgency",
   "name": "MIAM Horizons",
-  "url": "https://yourdomain.com",
-  "logo": "https://yourdomain.com/miamhorizonlogo.jpeg",
+  "url": "https://miamhorizon.com",
+  "logo": "https://miamhorizon.com/miamhorizonlogo.jpeg",
   "description": "Premium digital billboard advertising solutions in Arunachal Pradesh",
   "areaServed": "Arunachal Pradesh"
 })}
