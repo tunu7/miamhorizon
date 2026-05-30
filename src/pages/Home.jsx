@@ -14,6 +14,27 @@ import {
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
+
+function Home() {
+
+  const galleryImages = [
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
+
+    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+
+    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop",
+
+    "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2070&auto=format&fit=crop",
+
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
+
+    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2070&auto=format&fit=crop",
+  ];
+
+  return (
+    <>
+    
+
 <Helmet>
   <title>
     MIAM Horizons | Premium Digital Billboard Advertising
@@ -61,25 +82,7 @@ import { Helmet } from "react-helmet-async";
 })}
 </script>
 </Helmet>
-
-
-function Home() {
-
-  const galleryImages = [
-    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
-
-    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
-
-    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop",
-
-    "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2070&auto=format&fit=crop",
-
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop",
-
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2070&auto=format&fit=crop",
-  ];
-
-  return (
+   
     <div className="bg-black text-white overflow-hidden">
 
       <Navbar />
@@ -515,6 +518,9 @@ function Home() {
       <Footer />
 
     </div>
+
+     </>
+
   );
 }
 
